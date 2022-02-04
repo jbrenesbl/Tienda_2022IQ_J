@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>Mi primera pagina</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Página de lección 2"/>
+        <meta name="keywords" content="html5, css3, web, fidelitas">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Página inicial</h1>
-        <p>Esta es la primera página del curso WEB y patrones...</p>
+        <!-- Esta etiqueta indica al navegador que es un encabezado -->
+        <header id="encabezado">
+            <h1>Tienda en Línea</h1>
+            <br>
+        </header>
+        <nav id="menu">
+            <a href="Ejemplo9.html">Atrás</a>
+            <a href="index.html">HOME</a>
+            <a href="Ejemplo1.html">Adelante</a>
+        </nav>
+        <aside id="barraLateral">
+            <h2>Productos más vendidos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, iaculis congue ornare interdum tempus integer vitae, sed fermentum nibh vulputate vivamus tincidunt. Class iaculis porttitor leo nulla parturient facilisis aliquam quam eget lobortis, ligula dictumst volutpat rutrum purus sagittis torquent vehicula mauris. Maecenas leo sodales proin nostra praesent interdum ridiculus odio nascetur, malesuada blandit lectus sed erat mus inceptos rutrum, dapibus fermentum sociosqu class fames volutpat facilisis cum.</p>
+        </aside>
+        <section id="contenido">
+            <h2>Articulos Principales</h2>
+            <article>
+                <header>Asus Vivobook</header>
+                <p class="descripcion"><cite>Lorem ipsum dolor sit amet</cite> consectetur adipiscing elit, suscipit mattis nunc euismod suspendisse nisl. Rhoncus netus magnis quisque duis et risus consequat faucibus pretium, accumsan nec pellentesque ante nullam nisl tempus lacus fermentum, a fringilla integer vehicula viverra luctus phasellus ultricies. Massa hac blandit ligula class id at ac urna, a mauris primis integer phasellus dui ridiculus, diam vehicula curae risus fusce fames felis.</p>
+                <figure>
+                    <img src="images/Equipo1.jpg" alt="" width="200"/>
+                    <figcaption>Imagen con fines ilustrativos</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Alienware ATD 900</header>
+                <p class="descripcion">Faucibus vivamus egestas habitant nostra nunc diam lectus, posuere fames penatibus mi sollicitudin praesent, hendrerit montes aliquet dictum volutpat imperdiet. Sed fames ut pulvinar donec praesent conubia phasellus suspendisse himenaeos accumsan dignissim fringilla torquent, dictum pharetra pretium vestibulum dictumst lobortis morbi diam libero venenatis nullam proin. Maecenas ac mattis tellus etiam lacinia pellentesque, aptent porttitor nullam cum mi feugiat, diam gravida mollis curae est. Porttitor parturient rhoncus congue magna mi cum aptent placerat aliquam nisi vehicula tortor, est quam venenatis dis commodo in at ullamcorper quis fringilla.</p>
+                <figure>
+                    <img src="images/Equipo2.jpg" alt="" width="200"/>
+                    <figcaption>Más vendido</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Impresora 3D</header>
+                <p class="descripcion">Placerat id quis quam ante sagittis bibendum tempus nunc, felis sollicitudin pulvinar iaculis metus litora tortor himenaeos, pharetra eu penatibus volutpat ad integer urna. Sapien consequat in sollicitudin vitae dapibus himenaeos felis, venenatis per iaculis taciti cubilia mi. Nullam mi litora convallis ultrices rhoncus habitant mollis vehicula, luctus ullamcorper viverra conubia magna molestie commodo facilisi cubilia, euismod cras curabitur quis semper nam malesuada. Tellus phasellus platea a sagittis justo magnis, venenatis gravida inceptos aenean tincidunt nibh quam, nam facilisi arcu himenaeos in.</p>
+                <figure>
+                    <img src="images/Equipo3.jpg" alt="" width="200"/>
+                    <figcaption>Más económico</figcaption>
+                </figure>
+            </article>
+            <br>
+            <article>
+                <h2>Lineas de productos</h2>
+                <table border="0">
+                    <thead id="encabezadoTabla">
+                        <tr>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaResumen">
+                        <tr>
+                            <td>1</td>
+                            <td>Teclados</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Monitores</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Headsets</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Baterias</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Mouse</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Portatiles</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>                
+                <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Título 1</th>
+                            <th colspan="2">Titulo 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                            <td rowspan="4">Dato 3</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Dato 4</td>
+                            <td>Dato 5</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 6</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 7</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+            
+
+        </section>
+        <footer id="piePagina">
+            Derechos reservados &COPY; 2022 <address style="display: inline">Tibás, Colima</address> <address style="display: inline">Tel 8820-2655</address>
+        </footer>
     </body>
 </html>
